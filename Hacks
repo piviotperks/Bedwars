@@ -1,0 +1,58 @@
+```
+-- Script Hub by Luxuriousfedora
+
+-- GUI
+local gui = Instance.new("ScreenGui")
+local mainframe = Instance.new("Frame")
+local togglesframe = Instance.new("Frame")
+local scriptsframe = Instance.new("Frame")
+
+-- Whisper Aimbot
+local whisperaimbot = Instance.new("Script")
+whisperaimbot.Source = "https://raw.githubusercontent.com/Luxuriousfedora/BedwarsScripts/master/WhisperAimbot.lua"
+
+-- Kill Aura
+local killaura = Instance.new("Script")
+killaura.Source = "https://raw.githubusercontent.com/Luxuriousfedora/BedwarsScripts/master/KillAura.lua"
+
+-- Auto Win
+local autowin = Instance.new("Script")
+autowin.Source = "https://raw.githubusercontent.com/Luxuriousfedora/BedwarsScripts/master/AutoWin.lua"
+
+-- Anti-Cheat Disabler
+local anticheatdisabler = Instance.new("Script")
+anticheatdisabler.Source = "https://raw.githubusercontent.com/Luxuriousfedora/BedwarsScripts/master/AntiCheatDisabler.lua"
+
+-- Toggle Buttons
+local whisperaimbuttontoggle = Instance.new("TextButton")
+whisperaimbuttontoggle.Text = "Whisper Aimbot"
+whisperaimbuttontoggle.Size = UDim2.new(0, 100, 0, 20)
+
+local killauratoggle = Instance.new("TextButton")
+killauratoggle.Text = "Kill Aura"
+killauratoggle.Size = UDim2.new(0, 100, 0, 20)
+
+local autowintoggle = Instance.new("TextButton")
+autowintoggle.Text = "Auto Win"
+autowintoggle.Size = UDim2.new(0, 100, 0, 20)
+
+local anticheatdisabler toggle = Instance.new("TextButton")
+anticheatdisabler toggle.Text = "Anti-Cheat Disabler"
+anticheatdisabler toggle.Size = UDim2.new(0, 100, 0, 20)
+
+-- Add GUI Elements
+gui.Parent = game.Players.LocalPlayer.PlayerGui
+mainframe.Parent = gui
+togglesframe.Parent = mainframe
+scriptsframe.Parent = mainframe
+
+whisperaimbuttontoggle.Parent = togglesframe
+killauratoggle.Parent = togglesframe
+autowintoggle.Parent = togglesframe
+anticheatdisabler toggle.Parent = togglesframe
+
+whisperaimbot.Parent = scriptsframe
+killaura.Parent = scriptsframe
+autowin.Parent = scriptsframe
+anticheatdisabler.Parent = scriptsframe
+```
